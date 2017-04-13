@@ -1,7 +1,7 @@
 <html>
 <body>
 	<form action="#">
-		<textarea type="text" name="u" rows="3" cols="80"><?=htmlspecialchars($_REQUEST['u']);?></textarea>
+		<textarea type="text" name="u" rows="3" cols="80"><?=@htmlspecialchars($_REQUEST['u']);?></textarea>
 		<br/>
 		<button onclick="return go();">Get screenshot</button>
 	</form>
